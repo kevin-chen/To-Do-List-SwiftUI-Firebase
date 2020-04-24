@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FB710B1624534ABC0018D119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1524534ABC0018D119 /* AppDelegate.swift */; };
 		FB710B1824534ABC0018D119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1724534ABC0018D119 /* SceneDelegate.swift */; };
-		FB710B1A24534ABC0018D119 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1924534ABC0018D119 /* ContentView.swift */; };
+		FB710B1A24534ABC0018D119 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1924534ABC0018D119 /* TaskListView.swift */; };
 		FB710B1C24534ABE0018D119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB710B1B24534ABE0018D119 /* Assets.xcassets */; };
 		FB710B1F24534ABE0018D119 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB710B1E24534ABE0018D119 /* Preview Assets.xcassets */; };
 		FB710B2224534ABE0018D119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB710B2024534ABE0018D119 /* LaunchScreen.storyboard */; };
+		FB710B2B24534B650018D119 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B2A24534B650018D119 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB710B1224534ABC0018D119 /* To-Do-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB710B1524534ABC0018D119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB710B1724534ABC0018D119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB710B1924534ABC0018D119 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB710B1924534ABC0018D119 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		FB710B1B24534ABE0018D119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB710B1E24534ABE0018D119 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB710B2124534ABE0018D119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB710B2324534ABE0018D119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB710B2A24534B650018D119 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 		FB710B1424534ABC0018D119 /* To-Do-Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				FB710B1524534ABC0018D119 /* AppDelegate.swift */,
-				FB710B1724534ABC0018D119 /* SceneDelegate.swift */,
-				FB710B1924534ABC0018D119 /* ContentView.swift */,
+				FB710B2C24534CE40018D119 /* App */,
+				FB710B2924534B4F0018D119 /* Model */,
+				FB710B2D24534CEA0018D119 /* Views */,
 				FB710B1B24534ABE0018D119 /* Assets.xcassets */,
 				FB710B2024534ABE0018D119 /* LaunchScreen.storyboard */,
 				FB710B2324534ABE0018D119 /* Info.plist */,
@@ -73,6 +75,31 @@
 				FB710B1E24534ABE0018D119 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB710B2924534B4F0018D119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB710B2A24534B650018D119 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB710B2C24534CE40018D119 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB710B1524534ABC0018D119 /* AppDelegate.swift */,
+				FB710B1724534ABC0018D119 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FB710B2D24534CEA0018D119 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB710B1924534ABC0018D119 /* TaskListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB710B2B24534B650018D119 /* Task.swift in Sources */,
 				FB710B1624534ABC0018D119 /* AppDelegate.swift in Sources */,
 				FB710B1824534ABC0018D119 /* SceneDelegate.swift in Sources */,
-				FB710B1A24534ABC0018D119 /* ContentView.swift in Sources */,
+				FB710B1A24534ABC0018D119 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
