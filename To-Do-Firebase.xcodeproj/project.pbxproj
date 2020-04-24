@@ -14,6 +14,8 @@
 		FB710B1F24534ABE0018D119 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB710B1E24534ABE0018D119 /* Preview Assets.xcassets */; };
 		FB710B2224534ABE0018D119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB710B2024534ABE0018D119 /* LaunchScreen.storyboard */; };
 		FB710B2B24534B650018D119 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B2A24534B650018D119 /* Task.swift */; };
+		FBEF86322453819E0008B070 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF86312453819E0008B070 /* TaskCellViewModel.swift */; };
+		FBEF86352453834B0008B070 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF86342453834B0008B070 /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FB710B2124534ABE0018D119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB710B2324534ABE0018D119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB710B2A24534B650018D119 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FBEF86312453819E0008B070 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		FBEF86342453834B0008B070 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				FB710B2C24534CE40018D119 /* App */,
 				FB710B2924534B4F0018D119 /* Model */,
+				FBEF8633245381A20008B070 /* ViewModels */,
 				FB710B2D24534CEA0018D119 /* Views */,
 				FB710B1B24534ABE0018D119 /* Assets.xcassets */,
 				FB710B2024534ABE0018D119 /* LaunchScreen.storyboard */,
@@ -100,6 +105,15 @@
 				FB710B1924534ABC0018D119 /* TaskListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBEF8633245381A20008B070 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FBEF86312453819E0008B070 /* TaskCellViewModel.swift */,
+				FBEF86342453834B0008B070 /* TaskListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +191,8 @@
 				FB710B1624534ABC0018D119 /* AppDelegate.swift in Sources */,
 				FB710B1824534ABC0018D119 /* SceneDelegate.swift in Sources */,
 				FB710B1A24534ABC0018D119 /* TaskListView.swift in Sources */,
+				FBEF86322453819E0008B070 /* TaskCellViewModel.swift in Sources */,
+				FBEF86352453834B0008B070 /* TaskListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
