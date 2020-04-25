@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct TaskListView: View {
     @ObservedObject var taskListVM = TaskListViewModel()
@@ -15,9 +16,52 @@ struct TaskListView: View {
     @State var presentAddNewItem = false
     @State var showSignInForm = false
     
+    func localNotification() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+            if success {
+                print("All set!")
+            } else if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Notification Title"
+        content.subtitle = "Message"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request)
+    }
+    
     var body: some View {
+        
         NavigationView {
             VStack(alignment: .leading) {
+//                Button("Schedule Notification") {
+//                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+//                        if success {
+//                            print("All set!")
+//                        } else if let error = error {
+//                            print(error.localizedDescription)
+//                        }
+//                    }
+//
+//                    let content = UNMutableNotificationContent()
+//                    content.title = "Notification Title"
+//                    content.subtitle = "Message"
+//                    content.sound = UNNotificationSound.default
+//
+//                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//
+//                    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+//
+//                    UNUserNotificationCenter.current().add(request)
+//                }
+                
                 List {
                     ForEach(taskListVM.taskCellViewModels) { taskCellVM in
                         TaskCell(taskCellVM: taskCellVM)
@@ -26,6 +70,7 @@ struct TaskListView: View {
                         TaskCell(taskCellVM: TaskCellViewModel(task: Task(title: "", completed: false))) { task in
                             self.taskListVM.addTask(task: task)
                             self.presentAddNewItem.toggle()
+                            self.localNotification()
                         }
                     }
                 }
