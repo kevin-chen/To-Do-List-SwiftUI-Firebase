@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7DBFB00CCA6C2C8EC126300 /* Pods_To_Do_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA80FA83161234A7AABE789 /* Pods_To_Do_Firebase.framework */; };
+		FB37C2B92453B84600631155 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37C2B82453B84600631155 /* TaskRepository.swift */; };
+		FB37C2BB2453CB0700631155 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB37C2BA2453CB0700631155 /* GoogleService-Info.plist */; };
+		FB37C2BD24546F3200631155 /* SigninWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37C2BC24546F3200631155 /* SigninWithAppleButton.swift */; };
+		FB37C2BF24546FD400631155 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37C2BE24546FD400631155 /* SigninView.swift */; };
 		FB710B1624534ABC0018D119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1524534ABC0018D119 /* AppDelegate.swift */; };
 		FB710B1824534ABC0018D119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1724534ABC0018D119 /* SceneDelegate.swift */; };
 		FB710B1A24534ABC0018D119 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B1924534ABC0018D119 /* TaskListView.swift */; };
@@ -14,12 +19,19 @@
 		FB710B1F24534ABE0018D119 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB710B1E24534ABE0018D119 /* Preview Assets.xcassets */; };
 		FB710B2224534ABE0018D119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB710B2024534ABE0018D119 /* LaunchScreen.storyboard */; };
 		FB710B2B24534B650018D119 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB710B2A24534B650018D119 /* Task.swift */; };
+		FBE72899245475BD003E5A81 /* SigninWithAppleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE72898245475BD003E5A81 /* SigninWithAppleCoordinator.swift */; };
 		FBEF86322453819E0008B070 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF86312453819E0008B070 /* TaskCellViewModel.swift */; };
 		FBEF86352453834B0008B070 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF86342453834B0008B070 /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB710B1224534ABC0018D119 /* To-Do-Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do-Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD91A44821A2FB04B555A3A9 /* Pods-To-Do-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-To-Do-Firebase.debug.xcconfig"; path = "Target Support Files/Pods-To-Do-Firebase/Pods-To-Do-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
+		F1F773723D9A50819B877483 /* Pods-To-Do-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-To-Do-Firebase.release.xcconfig"; path = "Target Support Files/Pods-To-Do-Firebase/Pods-To-Do-Firebase.release.xcconfig"; sourceTree = "<group>"; };
+		FB37C2B82453B84600631155 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		FB37C2BA2453CB0700631155 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB37C2BC24546F3200631155 /* SigninWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithAppleButton.swift; sourceTree = "<group>"; };
+		FB37C2BE24546FD400631155 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		FB710B1224534ABC0018D119 /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB710B1524534ABC0018D119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB710B1724534ABC0018D119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB710B1924534ABC0018D119 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
@@ -28,8 +40,11 @@
 		FB710B2124534ABE0018D119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB710B2324534ABE0018D119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB710B2A24534B650018D119 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FBE72898245475BD003E5A81 /* SigninWithAppleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithAppleCoordinator.swift; sourceTree = "<group>"; };
+		FBE7289B24547C2E003E5A81 /* To Do List.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "To Do List.entitlements"; sourceTree = "<group>"; };
 		FBEF86312453819E0008B070 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
 		FBEF86342453834B0008B070 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		FEA80FA83161234A7AABE789 /* Pods_To_Do_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_To_Do_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,24 +52,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DBFB00CCA6C2C8EC126300 /* Pods_To_Do_Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F203BEC857A0C730272914E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEA80FA83161234A7AABE789 /* Pods_To_Do_Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		340652F09FECFFEF6DF8CFBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD91A44821A2FB04B555A3A9 /* Pods-To-Do-Firebase.debug.xcconfig */,
+				F1F773723D9A50819B877483 /* Pods-To-Do-Firebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB37C2B72453B81B00631155 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FB37C2B82453B84600631155 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		FB710B0924534ABC0018D119 = {
 			isa = PBXGroup;
 			children = (
+				FBE7289B24547C2E003E5A81 /* To Do List.entitlements */,
 				FB710B1424534ABC0018D119 /* To-Do-Firebase */,
 				FB710B1324534ABC0018D119 /* Products */,
+				340652F09FECFFEF6DF8CFBC /* Pods */,
+				2F203BEC857A0C730272914E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FB710B1324534ABC0018D119 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB710B1224534ABC0018D119 /* To-Do-Firebase.app */,
+				FB710B1224534ABC0018D119 /* To Do List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,12 +107,15 @@
 			isa = PBXGroup;
 			children = (
 				FB710B2C24534CE40018D119 /* App */,
+				FBE72897245475AB003E5A81 /* Services */,
+				FB37C2B72453B81B00631155 /* Repositories */,
 				FB710B2924534B4F0018D119 /* Model */,
 				FBEF8633245381A20008B070 /* ViewModels */,
 				FB710B2D24534CEA0018D119 /* Views */,
 				FB710B1B24534ABE0018D119 /* Assets.xcassets */,
 				FB710B2024534ABE0018D119 /* LaunchScreen.storyboard */,
 				FB710B2324534ABE0018D119 /* Info.plist */,
+				FB37C2BA2453CB0700631155 /* GoogleService-Info.plist */,
 				FB710B1D24534ABE0018D119 /* Preview Content */,
 			);
 			path = "To-Do-Firebase";
@@ -103,8 +150,18 @@
 			isa = PBXGroup;
 			children = (
 				FB710B1924534ABC0018D119 /* TaskListView.swift */,
+				FB37C2BC24546F3200631155 /* SigninWithAppleButton.swift */,
+				FB37C2BE24546FD400631155 /* SigninView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FBE72897245475AB003E5A81 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBE72898245475BD003E5A81 /* SigninWithAppleCoordinator.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FBEF8633245381A20008B070 /* ViewModels */ = {
@@ -123,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB710B2624534ABE0018D119 /* Build configuration list for PBXNativeTarget "To-Do-Firebase" */;
 			buildPhases = (
+				3EB50830D418FBD3BB7C821C /* [CP] Check Pods Manifest.lock */,
 				FB710B0E24534ABC0018D119 /* Sources */,
 				FB710B0F24534ABC0018D119 /* Frameworks */,
 				FB710B1024534ABC0018D119 /* Resources */,
+				ADF44EEE4C2D8DA36C77BF0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,7 +192,7 @@
 			);
 			name = "To-Do-Firebase";
 			productName = "To-Do-Firebase";
-			productReference = FB710B1224534ABC0018D119 /* To-Do-Firebase.app */;
+			productReference = FB710B1224534ABC0018D119 /* To Do List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB710B2224534ABE0018D119 /* LaunchScreen.storyboard in Resources */,
+				FB37C2BB2453CB0700631155 /* GoogleService-Info.plist in Resources */,
 				FB710B1F24534ABE0018D119 /* Preview Assets.xcassets in Resources */,
 				FB710B1C24534ABE0018D119 /* Assets.xcassets in Resources */,
 			);
@@ -182,17 +242,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EB50830D418FBD3BB7C821C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-To-Do-Firebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF44EEE4C2D8DA36C77BF0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-To-Do-Firebase/Pods-To-Do-Firebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-To-Do-Firebase/Pods-To-Do-Firebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-To-Do-Firebase/Pods-To-Do-Firebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB710B0E24534ABC0018D119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE72899245475BD003E5A81 /* SigninWithAppleCoordinator.swift in Sources */,
+				FB37C2BD24546F3200631155 /* SigninWithAppleButton.swift in Sources */,
 				FB710B2B24534B650018D119 /* Task.swift in Sources */,
+				FB37C2BF24546FD400631155 /* SigninView.swift in Sources */,
 				FB710B1624534ABC0018D119 /* AppDelegate.swift in Sources */,
 				FB710B1824534ABC0018D119 /* SceneDelegate.swift in Sources */,
 				FB710B1A24534ABC0018D119 /* TaskListView.swift in Sources */,
 				FBEF86322453819E0008B070 /* TaskCellViewModel.swift in Sources */,
 				FBEF86352453834B0008B070 /* TaskListViewModel.swift in Sources */,
+				FB37C2B92453B84600631155 /* TaskRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +432,11 @@
 		};
 		FB710B2724534ABE0018D119 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD91A44821A2FB04B555A3A9 /* Pods-To-Do-Firebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "To-Do-Firebase/To Do List.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"To-Do-Firebase/Preview Content\"";
 				DEVELOPMENT_TEAM = VAM3A58Y83;
@@ -338,7 +447,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.nyu.cs.kc3585.To-Do-Firebase";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "To Do List";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,11 +456,13 @@
 		};
 		FB710B2824534ABE0018D119 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F773723D9A50819B877483 /* Pods-To-Do-Firebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "To-Do-Firebase/To Do List.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"To-Do-Firebase/Preview Content\"";
-				DEVELOPMENT_TEAM = VAM3A58Y83;
+				DEVELOPMENT_TEAM = 8CG83KHCFD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "To-Do-Firebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.nyu.cs.kc3585.To-Do-Firebase";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "To Do List";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

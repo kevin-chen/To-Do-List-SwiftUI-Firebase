@@ -13,6 +13,7 @@ struct TaskListView: View {
     let tasks = testDataTasks
     
     @State var presentAddNewItem = false
+    @State var showSignInForm = false
     
     var body: some View {
         NavigationView {
@@ -38,7 +39,15 @@ struct TaskListView: View {
                 }
                 .padding()
             }
-            .navigationBarTitle("Tasks")
+            .sheet(isPresented: $showSignInForm) {
+                SigninView()
+            }
+            .navigationBarItems(trailing: Button(action: {
+                self.showSignInForm.toggle()
+            }){
+                Image(systemName: "person.circle")
+            })
+                .navigationBarTitle("Tasks")
         }
     }
 }
@@ -61,7 +70,7 @@ struct TaskCell: View {
                 .frame(width: 20, height: 20)
                 .onTapGesture {
                     self.taskCellVM.task.completed.toggle()
-                }
+            }
             TextField("Enter the task title", text: $taskCellVM.task.title, onCommit: {
                 self.onCommit(self.taskCellVM.task) // when the user presses enter, it sends the task back to the callback (onCommit) and captures in TaskCell
             })

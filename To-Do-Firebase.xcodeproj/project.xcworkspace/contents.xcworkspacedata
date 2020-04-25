@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/kchen0503/Desktop/To-Do-Firebase/To-Do-Firebase/GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
       location = "self:To-Do-Firebase.xcodeproj">
    </FileRef>
 </Workspace>
